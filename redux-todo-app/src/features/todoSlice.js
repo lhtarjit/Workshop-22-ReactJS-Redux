@@ -4,6 +4,7 @@ const initialState = {
   todoList: [],
 };
 // const[todoList, setTodoList] = useState([])
+// setTodoList()
 const todoSlice = createSlice({
   name: "todos",
   initialState,
@@ -14,6 +15,6 @@ const todoSlice = createSlice({
   },
 });
 
-export const {} = todoSlice.actions;
+export const { saveTodo } = todoSlice.actions;
 
 export default todoSlice.reducer;
