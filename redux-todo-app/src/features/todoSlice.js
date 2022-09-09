@@ -13,6 +13,7 @@ const todoSlice = createSlice({
     },
 
     setCheck: (state, action) => {
+      // eslint-disable-next-line array-callback-return
       state.todoList.map((item) => {
         if (action.payload === item.id) {
           if (item.done === true) {
