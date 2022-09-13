@@ -28,10 +28,9 @@ function App() {
 
   return (
     <div className="App">
-      {notification && (
+      {/* {notification && (
         <Notification type={notification.type} message={notification.message} />
-      )}
-      {console.log(notification)}
+      )} */}
       {!isLoggedIn && <Auth />}
       {isLoggedIn && <Layout />}
     </div>
