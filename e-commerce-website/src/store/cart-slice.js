@@ -1,5 +1,5 @@
+/* eslint-disable no-undef */
 import { createSlice } from "@reduxjs/toolkit";
-// import { uiActions } from "./ui-slice";
 
 const cartSlice = createSlice({
   name: "cart",
