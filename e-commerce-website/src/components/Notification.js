@@ -5,7 +5,7 @@ import { uiActions } from "../store/ui-slice";
 
 const Notification = ({ type, message }) => {
   const dispatch = useDispatch();
-  const notification = useSelector((state) => state.ui.Notification);
+  const notification = useSelector((state) => state.ui.notification);
   const handleClose = () => {
     dispatch(
       uiActions.showNotification({
@@ -13,9 +13,10 @@ const Notification = ({ type, message }) => {
       })
     );
   };
+  console.log(notification);
   return (
     <div>
-      {notification.open && (
+      {notification && (
         <Alert onClose={handleClose} severity={type}>
           {message}
         </Alert>
